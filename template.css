@@ -1,0 +1,103 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 200vh;
+  background-color: black;
+  margin: 0;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+header {
+  width: 1080px;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header-logo {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.header-logo:hover {
+  opacity: 0.7;
+}
+
+.hero-container {
+  box-sizing: border-box;
+  width: 1080px;
+  display: flex;
+  margin-top: 5em;
+}
+
+.hero-title {
+  width: 540px;
+  padding-top: 1.75em;
+  color: white;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.hero-image {
+  width: 540px;
+}
+
+img {
+  width: 100%;
+}
+
+.header-btn {
+  border: none;
+  background-color: #00000000;
+  color: white;
+  font-size: 1em;
+  margin: 0.65em;
+}
+
+.header-btn-account-access {
+  border: none;
+  background-color: #bfb48585;
+  color: white;
+  font-size: 1em;
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 8em;
+  margin: 0.65em;
+}
+
+.header-btn:hover {
+  opacity: 0.7;
+}
+
+.header-btn-account-access:hover {
+  background-color: #bfb485;
+}
+
+@media (max-width: 1080px) {
+  header {
+    width: 100%;
+  }
+  .hero-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-image {
+    margin-right: calc(100vw - 1080px);
+  }
+}
+
