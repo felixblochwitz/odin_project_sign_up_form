@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/css/intlTelInput.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/intlTelInput.min.js"></script>
+    <script src="validation.js" defer></script>
+    <script src="popup.js" defer></script>
+  </head>
+  <header>
+    <div class="header-left">
+      <a href="./index.html" class="lalezar-regular" id="header-logo"
+        >Black Jack Edge</a
+      >
+      <button class="header-btn">Training</button>
+      <button class="header-btn">Learn</button>
+      <button class="header-btn">Pricing</button>
+      <button class="header-btn">FAQ</button>
+    </div>
+    <div class="header-right">
+      <a href="./sign-up.html"
+        ><button class="header-btn-account-access">Sign Up</button></a
+      >
+      <button class="header-btn-account-access">Log In</button>
+      <button class="burger-menu"><i class="bx bx-menu"></i></button>
+    </div>
+  </header>
+  <body>
+    <div class="site-container">
+      <div class="hero-container">
+        <div class="signup-form">
+          <form action="">
+            <h3>Create your Account</h3>
+            <div class="form-group">
+              <div class="form-section">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" />
+                <span class="form-error-msg"> </span>
+              </div>
+              <div class="form-section">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" />
+                <span class="form-error-msg"> </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-section">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                />
+                <span class="form-error-msg" id="email-error-msg"> </span>
+              </div>
+              <div class="form-section">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" />
+                <span class="form-error-msg"> </span>
+              </div>
+            </div>
+            <div class="form-group" id="password-group">
+              <div class="form-section">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+                <span class="form-error-msg" id="pw-error-msg"></span>
+              </div>
+              <div class="form-section">
+                <label for="pwConfirm">Confirm Password</label>
+                <input type="password" id="pwConfirm" name="pwConfirm" />
+                <span class="form-error-msg" id="pw-error-msg"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-section" id="terms-section">
+                <input type="checkbox" name="terms" id="terms" required />
+                <label for="terms" id="terms-label">
+                  I have read and accept the motherfucking
+                  <a href="">terms of service</a>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-section">
+                <button
+                  type="submit"
+                  class="form-button"
+                  id="submit-btn"
+                  disabled
+                >
+                  Create Account
+                </button>
+                <span id="account-question">
+                  Already have an account? <a href="">Sign In</a>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./images/black-jack-all-black.png"
+          alt=""
+          class="hero-image"
+        />
+      </div>
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <div class="popup-row">
+            <a href="./index.html" class="lalezar-regular" id="header-logo"
+              >Black Jack Edge</a
+            >
+            <button class="burger-menu" id="burger-menu-popup">
+              <i class="bx bx-x"></i>
+            </button>
+          </div>
+          <div class="popup-row">
+            <button class="header-btn-popup">Training</button>
+            <i class="bx bx-chevron-right header-btn-popup"></i>
+          </div>
+          <div class="popup-row">
+            <button class="header-btn-popup">Learn</button>
+            <i class="bx bx-chevron-right header-btn-popup"></i>
+          </div>
+          <div class="popup-row">
+            <button class="header-btn-popup">Pricing</button>
+            <i class="bx bx-chevron-right header-btn-popup"></i>
+          </div>
+          <div class="popup-row">
+            <button class="header-btn-popup">FAQ</button>
+            <i class="bx bx-chevron-right header-btn-popup"></i>
+          </div>
+        </div>
+        <div class="popup-account-section">
+          <a href="./sign-up.html"
+            ><button class="header-btn-account-access-popup">Sign Up</button></a
+          >
+          <button class="header-btn-account-access-popup">Log In</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
